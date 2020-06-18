@@ -4,6 +4,7 @@ import discord
 import string
 import os.path
 import time
+import os
 import random
 import sys
 import pymysql
@@ -86,4 +87,5 @@ async def 가입승인(ctx, member: discord.Member = None):
 # if __name__ == '__main__':
 #     for ext in extentions:
 #         bot.load_extension(ext)
-bot.run('NjcxNzYzNjU0NjA1Mjc1MTUz.Xut-lA.OiMbG6W9nisgpGosPKpY49oS3Ns')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
